@@ -12,6 +12,7 @@ import Showcase from '../src/Components/Section/Showcase'
 import Team from '../src/Components/Section/Team'
 import Faq from '../src/Components/Section/Faq'
 import Footer from '../src/Components/Footer'
+import ScrollTop from "./Components/ScrollTop";
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
 <Faq/>
 <Footer/>
    </ThemeProvider>
-   
+   <ScrollTop/>
     </>
   );
 }

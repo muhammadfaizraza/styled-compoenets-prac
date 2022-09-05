@@ -66,6 +66,11 @@ border: 1px solid ${props => props.theme.text};;
 
   
 }
+@media (max-width : 70em){
+
+align-items: center;
+
+}
 `
 const Item = styled.div`
 
@@ -78,6 +83,10 @@ border  :2px solid ${props =>props.theme.text};
 z-index : 4;
 
 backdrop-filter :blur(4px);
+@media (max-width : 78em){
+align-items:center ;
+
+}
 `
 const Name =styled.h2`
 font-size : ${props => props.theme.fontlg} ;

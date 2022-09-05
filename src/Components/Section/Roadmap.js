@@ -8,7 +8,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 const Section = styled.section`
 min-height: 100vh;
 width : 100vw;
-backgroud-color: ${props => props.theme.body};
+background-color: ${props => props.theme.body};
 position : relative;
 
 
@@ -30,7 +30,7 @@ width : fit-content;
 
 const Container = styled.div`
 width : 70%;
-height 200vh;
+height: 200vh;
 background-color  : ${props => props.theme.body};
 margin : 0 auto;
 display  :flex;
@@ -38,13 +38,18 @@ justify-content: center;
 align-items: center;
 position : relative;
 overflow: hidden;
+@media (max-width : 64em){
+
+  width: 70vh;
+}
+
+
 
 `
 const SvgContainer = styled.div`
 display : flex;
 justify-content:center;
 align-items: center;
-
 
 
 `
@@ -56,10 +61,12 @@ display : flex;
 flex-direction: column;
 justify-content:center;
 align-items:center;
-  
+
+
 &>*:nth-of-type(2n + 1){
 
 justify-content: start;
+
   div{
 
   border-radius:0px 50px 0px 50px;  
@@ -79,8 +86,11 @@ justify-content: start;
   
   div{
 
-border-radius:50px 0px 50px 0px;  
+
 text-align:left;
+
+border-radius:40px 0px 40px 0px;  
+}
     
   }
   p{
@@ -89,7 +99,7 @@ text-align:left;
 
 
   }
-  }
+  
 `
 const Item = styled.li`
 
@@ -111,7 +121,10 @@ width : 40%;
 height:fit-content;
 padding : 1rem;
 border : 3px solid ${props => props.theme.text}; 
+@media (max-width : 48em){
 
+  width:30% ;
+}
 
 
 `
@@ -121,7 +134,7 @@ height: fit-content;
 background-color: ${props => props.theme.carouselColor};
 color: ${props => props.theme.text};
 padding: 1rem;
-postion : relative;
+position : relative;
 border : 1px solid ${props=>props.theme.text}
 
 `
@@ -163,7 +176,7 @@ return ( <Item ref={addToRefs}>
 const SubTitle = styled.span`
 display : block;
 font-size:${props => props.theme.fontxl};
-text-tranform  : capitilize;
+text-transform  : capitilize;
 color : ${props => props.theme.text};
 
 
@@ -173,7 +186,7 @@ const Text = styled.span`
 
 display : block;
 font-size:${props => props.theme.fontsm};
-text-tranform  : capitilize;
+text-transform  : capitilize;
 color : ${props => props.theme.text};
 font-weight: 400;
 margin : 0.5rem 0;

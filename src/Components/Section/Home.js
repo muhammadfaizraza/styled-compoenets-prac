@@ -114,7 +114,7 @@ const Home = () => {
 
 </Circle>
 
-<img src={RoundTextBlack} />  
+<img src= {RoundTextBlack} />  
 
 </Round>
 

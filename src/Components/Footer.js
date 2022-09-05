@@ -80,7 +80,7 @@ cursor: pointer;
 
 
 &::after{
-  content : ' ';
+  content : '';
   display : block;
   width :0%;
   height :2px;

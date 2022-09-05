@@ -38,7 +38,17 @@ color :blue;
         
         
         }
-        
+        @media (max-width : 64em){
+
+font-size: ${props => props.theme.fontmd}; ;
+
+}
+@media (max-width : 44em){
+
+align-items:center ;
+align-self:center ;
+display:grid ;
+}
         
         `
 

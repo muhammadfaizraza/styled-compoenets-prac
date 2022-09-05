@@ -43,7 +43,42 @@ const Container = styled.div`
 width : 25vw;
 height : 75vh; 
 
+@media (max-width : 70em){
 
+height: 65vh;
+margin-top:3rem ;
+width: 35vw;
+
+
+    }
+    @media (max-width : 64em){
+
+height: 50vh;
+width: 35vw;
+text-align:center ;
+
+    }
+    @media  (max-width : 48em){
+
+height: 50vh;
+width:  40vw;
+
+
+    }
+    @media (max-width : 44em){
+
+height: 45vh;
+width: 45vw;
+align-items:center ;
+
+    }
+    @media (max-width : 44em){
+
+height: 45vh;
+width: 55vw;
+align-items:center ;
+
+    }
 .swiper{
 
 
@@ -77,7 +112,14 @@ background-size : contain;
     display : none;
 }
 
+@media (max-width : 64em){
+width : 3rem;
 
+}
+@media (max-width : 30em){
+width : 2rem;
+
+}
 }.swiper-button-prev{
     color: ${props => props.theme.text};
     left : 0;
@@ -94,7 +136,14 @@ background-size : contain;
         display : none;
     }
     
-    
+    @media (max-width : 64em){
+width : 3rem;
+
+}
+@media (max-width : 30em){
+width : 2rem;
+
+}
     }
 
 

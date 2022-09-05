@@ -30,14 +30,14 @@ overflow: hidden;
 const ImgContainer =styled.div`
 
 width : 100%;
-position : absolute: 
+position : absolute; 
 top: 50%;
 left: 50%;
-tranform:translate (-50%,-50%);
+transform:translate (-50%,-50%);
 display: flex;
 align-items : center;
  justify-content: center;
-opacity: 0.4;
+opacity : 0.4;
 img{
 
 width : 15rem;
@@ -46,7 +46,7 @@ height: auto;
 }
 `
 const Title = styled.h1`
-font-size : ${props => props.theme.fontxxl};
+font-size : ${props => props.theme.fontxl};
 color : ${props => props.theme.body};
 padding: 1rem 1rem ;
 z-index :10;
@@ -69,7 +69,7 @@ color : ${props=>props.theme.text};
 outline :none; 
 border: none;
 padding: 2rem;
-align-item:center;
+align-items:center;
 font-size : ${props=>props.theme.fontsm};
 padding : 0.8rem 2.5rem;
 border-radius : 50px;
